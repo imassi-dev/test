@@ -192,19 +192,33 @@
   $break-max-3xsm:"(max-width:365px)";
   $break-max-2xsm:"(max-width:420px)";
   $break-max-xsm:"(max-width:489px)";
-  $break-sm:"(min-width:576px)";
   $break-max-sm:"(max-width:576px)";
-  $break-md:"(min-width:768px )";
   $break-max-md:"(max-width:768px)";
-  $break-lg:"(min-width:992px)";
   $break-max-lg:"(max-width:992px)";
-  $break-xl:"(min-width:1200px)";
   $break-max-xl:"(max-width:1200px)";
-  $break-xxl:"(min-width:1400px)";
   $break-max-xxl:"(max-width:1400px)";
-  $break-3xl:"(min-width:1800px)";
+  $break-min-3xl:"(min-width:1800px)";
   .container{
-    @media #{$break-3xl} {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1320px;
+    @media #{break-max-sm} {
+      max-width: 100%;
+    }
+    @media #{break-max-md} {
+      max-width: 720px;
+    }
+    @media #{break-max-lg} {
+      max-width: 960px;
+    }
+    @media #{break-max-xl} {
+      max-width: 1140px;
+    }
+    @media #{break-max-xxl} {
+      max-width: 1320px;
+    }
+    @media #{$break-min-3xl} {
       max-width: 1320px;
     }
   }

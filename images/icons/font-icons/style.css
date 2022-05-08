@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'quran-font';
-  src:  url('fonts/quran-font.eot?516mqn');
-  src:  url('fonts/quran-font.eot?516mqn#iefix') format('embedded-opentype'),
-    url('fonts/quran-font.ttf?516mqn') format('truetype'),
-    url('fonts/quran-font.woff?516mqn') format('woff'),
-    url('fonts/quran-font.svg?516mqn#quran-font') format('svg');
+  src:  url('fonts/quran-font.eot?kp13c6');
+  src:  url('fonts/quran-font.eot?kp13c6#iefix') format('embedded-opentype'),
+    url('fonts/quran-font.ttf?kp13c6') format('truetype'),
+    url('fonts/quran-font.woff?kp13c6') format('woff'),
+    url('fonts/quran-font.svg?kp13c6#quran-font') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,23 +25,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-accessibility:before {
+  content: "\e906";
+}
+.icon-close:before {
+  content: "\e90e";
+}
 .icon-down-arrow:before {
   content: "\e901";
 }
 .icon-home:before {
   content: "\e90d";
-  color: #e08125;
 }
 .icon-calendar:before {
   content: "\e900";
 }
 .icon-eita:before {
   content: "\e902";
-  color: #fbf7eb;
 }
 .icon-instagram:before {
   content: "\e903";
-  color: #fbf7eb;
 }
 .icon-left-arrow:before {
   content: "\e904";
@@ -49,23 +52,17 @@
 .icon-online-learning:before {
   content: "\e905";
 }
-.icon-pattern-circle:before {
-  content: "\e906";
-}
 .icon-right-arrow:before {
   content: "\e907";
 }
 .icon-left-arrow-2:before {
   content: "\e908";
-  color: #707070;
 }
 .icon-search:before {
   content: "\e909";
-  color: #fbf7eb;
 }
 .icon-soroush:before {
   content: "\e90a";
-  color: #fbf7eb;
 }
 .icon-team:before {
   content: "\e90b";

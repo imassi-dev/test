@@ -7,6 +7,7 @@
       position: relative;
       overflow-x: hidden;
       font-weight: normal;
+      text-align: right;
   }
   input,
   textarea,
@@ -30,6 +31,8 @@
     color: black;
     &:hover{
       color: black;
+      text-decoration: none;
     }
   }
   ul {list-style: none;}  dl, ol, ul {margin-top: 0;margin-bottom: 0;padding: 0;}
+  figure{ margin: 0;}
