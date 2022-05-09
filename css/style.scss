@@ -175,7 +175,7 @@
         position: absolute;
         left: -20px;
         top: 40px;
-        z-index: 4;
+        z-index: 999999;
         display: none;
       }
       input{
@@ -1318,4 +1318,28 @@ footer{
           }
       }
   }
+}
+
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+}
+[type="button"], [type="reset"], [type="submit"], button {
+  -webkit-appearance: button;
+}
+button, select {
+  text-transform: none;
+}
+button, input {
+  overflow: visible;
 }
