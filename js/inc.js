@@ -236,3 +236,8 @@ function makeMenuLTR() {
     $('.sm-rtl').removeClass("sm-rtl");
 }
 // END MENU -------------------------------------------------------------------------------------------------
+
+// accessibility ------------------------
+$(".close").click(function(){
+    $(".alert").remove();
+  });

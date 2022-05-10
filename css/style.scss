@@ -186,6 +186,9 @@
         width:300px;
         border: none;
         background-color: rgba($color : #fff , $alpha : .95 );
+        @media #{$break-max-3xsm} {
+          width:250px;
+        }
       }
       .search-item{
         font-weight: 400;
@@ -196,6 +199,9 @@
         border-top: 1px solid #ebebeb;
         text-align: right;
         padding: 10px;
+        @media #{$break-max-3xsm} {
+          width:250px;
+        }
         li {
           border-bottom:1px solid #ececec;
           &:last-child{
@@ -1320,6 +1326,8 @@ footer{
   }
 }
 
+/* BOOTSTRAP styles for accessibility*/
+
 button.close {
   padding: 0;
   background-color: transparent;
@@ -1342,4 +1350,34 @@ button, select {
 }
 button, input {
   overflow: visible;
+}
+.alert{
+  padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.fade {
+  transition: opacity 0.15s linear;
+}
+.btn-group-vertical > .btn, .btn-group > .btn {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.btn.disabled,
+.btn:disabled {
+    opacity: 0.65;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+a.btn.disabled,
+fieldset:disabled a.btn {
+    pointer-events: none;
 }

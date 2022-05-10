@@ -253,3 +253,22 @@ $('.font-color').on("change", function (elem) {
     document.querySelector('head').innerHTML += `<style>:root {--primary-color: ${$('#primary-color').val()} !important;}</style>`;
     document.querySelector('head').innerHTML += `<style>:root {--secondary-color: ${$('#secondary-color').val()} !important;}</style>`;
 })
+
+
+(function (t) {
+    t(function () {
+      t('input[name = "colorblindType"]').on("change", function () {
+        var i = "simpl" + t('input[name = "colorblindType"]:checked').val();
+        t(".converted-image").remove();
+        var e = document.getElementsByTagName("img");
+        for (let a = 0; a < e.length; a++) {
+          let o = e[a];
+          "simplNormal" == i
+            ? t(o).show()
+            : getFilteredImage(o, i, function (i, e) {
+                (i.className = "converted-image " + t(o).attr("class")), t(i).insertAfter(o), t(o).hide();
+              });
+        }
+      });
+    });
+  })(jQuery)
